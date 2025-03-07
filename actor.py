@@ -1,9 +1,10 @@
+# actor.py
 class Actor:
-    def _init_(self, nombre, edad, direccion, tipo_actor):
+    def __init__(self, nombre, edad, direccion, tipo_actor):
         self.__nombre = nombre
         self.__edad = edad
         self.__direccion = direccion
-        self.__tipo_actor = tipo_actor 
+        self.__tipo_actor = tipo_actor  # Puede ser 'Estudiante', 'Profesor', etc.
 
     def get_nombre(self):
         return self.__nombre
@@ -29,5 +30,5 @@ class Actor:
     def set_tipo_actor(self, tipo_actor):
         self.__tipo_actor = tipo_actor
 
-    def _str_(self):
+    def __str__(self):
         return f"Nombre: {self.get_nombre()}, Edad: {self.get_edad()}, Dirección: {self.get_direccion()}, Tipo: {self.get_tipo_actor()}"

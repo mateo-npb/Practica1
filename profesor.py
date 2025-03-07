@@ -1,3 +1,4 @@
+# profesor.py
 from actor import Actor
 
 class Profesor(Actor):
