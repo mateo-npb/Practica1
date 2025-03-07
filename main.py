@@ -1,7 +1,9 @@
+# main.py
 from estudiante import Estudiante
 from profesor import Profesor
 from administrador import Administrador
 
+# Listas para almacenar los actores
 list_estudiantes = []
 list_profesores = []
 list_administradores = []
@@ -63,6 +65,7 @@ def mostrar_administradores():
         for administrador in list_administradores:
             print(administrador)
 
+# Menú interactivo
 while True:
     print('::: MENU :::')
     print("""
@@ -90,6 +93,6 @@ while True:
         mostrar_administradores()
     elif opcion == '7':
         print('Saliendo del sistema.')
-        break 
+        break  # Termina el programa
     else:
         print('Opción inválida, intenta nuevamente.')
